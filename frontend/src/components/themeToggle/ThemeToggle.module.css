@@ -1,0 +1,15 @@
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 3px 6px;
+}
+.button:hover {
+  background: none;
+}
+@media (max-width: 768px) {
+  .button {
+    margin-left: 12px;
+  }
+}

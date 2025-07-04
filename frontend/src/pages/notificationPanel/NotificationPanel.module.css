@@ -1,0 +1,23 @@
+.clearButton {
+  margin-left: 16px;
+  padding: 4px 8px;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  background-color: #3897f0;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.clearButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.clearButton:hover:not(:disabled) {
+  background-color: #2a6bb8;
+}
+.panel h3 {
+  font-size: 13px;
+}

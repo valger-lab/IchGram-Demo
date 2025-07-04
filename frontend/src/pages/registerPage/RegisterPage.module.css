@@ -1,0 +1,78 @@
+.registerContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+.logo {
+  margin-left: 30px;
+  margin-bottom: -20px;
+  height: 50px;
+  width: 200px;
+}
+
+.learnMore {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  color: #999;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 325px;
+}
+
+.error {
+  color: #ef4444;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.terms {
+  font-size: 0.75rem;
+  color: #999;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.link {
+  color: rgba(0, 55, 107, 1);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.submitButton {
+  width: 100%;
+  background-color: rgba(0, 149, 246, 1);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.submitButton:hover {
+  background-color: #2563eb;
+}
+@media (max-width: 450px) {
+  .registerContainer {
+    width: 70%;
+    border: none;
+    background-color: transparent;
+    padding: 0 20px;
+  }
+
+  .divider {
+    margin: 0 -20px;
+  }
+}

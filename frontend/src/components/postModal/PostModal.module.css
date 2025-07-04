@@ -1,0 +1,328 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: var(--bg);
+  display: flex;
+  width: 70%;
+  height: 600px;
+  margin-left: 250px;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-direction: row;
+}
+.closeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.2s ease;
+}
+.closeBtn:hover {
+  background: none;
+}
+
+.imageSection {
+  position: relative;
+  flex: 1.5;
+  background: black;
+  display: flex;
+  justify-content: center;
+}
+
+.postImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.videoWrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+}
+.videoWrapper iframe {
+  height: 600px;
+  display: block;
+  cursor: pointer;
+  border: none;
+}
+
+.postDescription {
+  font-size: 11px;
+
+  color: var(--text);
+  margin-top: 4px;
+  margin-left: 11px;
+  font-style: italic;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 12px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.author {
+  display: flex;
+}
+.author strong {
+  margin-left: 11px;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.subscribeBtn {
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 12px;
+  color: #3897f0;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscribeBtn:hover {
+  background-color: transparent;
+}
+
+.subscribed {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.comments {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 12px;
+}
+
+.comment {
+  margin-bottom: 6px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.commentForm {
+  display: flex;
+  border-top: 1px solid #ccc;
+  padding-top: 8px;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.postBtn {
+  background: none;
+  border: none;
+  color: #3897f0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.postBtn:hover {
+  background-color: transparent;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.commentAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.commentContent {
+  padding: 0px 10px;
+  max-width: 90%;
+}
+.commentContent p {
+  margin-top: 3px;
+  margin-bottom: -2px;
+  font-size: 11px;
+  font-weight: 400;
+}
+.commentContent strong {
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.commentTime {
+  font-size: 10px;
+  color: #888;
+  margin-top: 2px;
+}
+
+.postTime {
+  font-size: 10px;
+  color: #888;
+  margin: 0px 0 12px 0;
+}
+.noComments {
+  font-size: 10px;
+  color: #888;
+}
+
+.commentActions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.commentActions span {
+  font-size: 10px;
+  color: #888;
+  cursor: pointer;
+}
+
+.moreIcon {
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .modal {
+    display: flex;
+    flex-direction: row;
+    margin-left: 277px;
+  }
+  .imageSection {
+    display: block;
+  }
+  .postImage {
+    height: -webkit-fill-available;
+  }
+}
+
+@media (max-width: 1030px) {
+  .modal {
+    margin-left: 202px;
+    width: 77%;
+  }
+}
+
+@media (max-width: 960px) {
+  .modal {
+    width: 60%;
+    height: 99%;
+    margin-left: 202px;
+    flex-direction: column;
+  }
+
+  .imageSection {
+    width: 100%;
+    height: 400px;
+  }
+
+  .postImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .videoWrapper {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .videoWrapper iframe {
+    height: 100%;
+  }
+  .comments {
+    overflow-x: auto;
+  }
+  .content {
+    height: 43%;
+  }
+  .header {
+    padding-bottom: 5px;
+  }
+  .actions {
+    margin-bottom: 3px;
+    font-size: 10px;
+  }
+  .actions svg {
+    width: 10px;
+    height: 10px;
+  }
+  .postTime {
+    font-size: 9px;
+    margin: 0px 0 8px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal {
+    width: 69%;
+    margin-left: 80px;
+  }
+  .header {
+    align-items: flex-start;
+  }
+  .content {
+    height: 60%;
+  }
+}

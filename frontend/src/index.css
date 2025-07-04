@@ -1,0 +1,21 @@
+:root {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --bg: #ffffff;
+  --text: #404040;
+  transition: all 0.3s ease;
+}
+
+.dark {
+  --bg: #404040;
+  --text: #f0f0f0;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--bg);
+  color: var(--text);
+}

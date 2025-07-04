@@ -1,0 +1,61 @@
+# ========== Общие ==========
+node_modules/
+*.log
+*.tmp
+*.temp
+*.local
+.DS_Store
+.cache/
+coverage/
+.pnp/
+.pnp.js
+.parcel-cache/
+.eslintcache
+*.tsbuildinfo
+
+# ========== Окружение ==========
+.env
+.env.local
+.env.*.local
+
+# ========== Логи и отладка ==========
+logs/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ========== Сборки и билды ==========
+build/
+dist/
+
+# ========== Backend ==========
+backend/node_modules/
+backend/.env
+backend/.env.local
+backend/.env.*.local
+backend/build/
+backend/dist/
+
+# ========== Frontend ==========
+frontend/node_modules/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+frontend/build/
+frontend/dist/
+frontend/.vite/
+frontend/.next/
+
+# ========== IDE и редакторы ==========
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ========== Docker (если используется) ==========
+*.docker
+*.dockerfile
+docker-compose.override.yml

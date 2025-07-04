@@ -1,0 +1,70 @@
+.container {
+  width: 250px;
+  margin-left: 280px;
+  border-right: 1px solid #ccc;
+  padding: 83px 10px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.contact:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+.unreadBadge {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  margin-left: auto;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.avatarAndName {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  flex-shrink: 1;
+}
+
+.avatarSkeleton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e5dfdf;
+}
+
+@media (max-width: 1030px) {
+  .container {
+    margin-left: 202px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 649px) {
+  .container {
+    display: none;
+  }
+}

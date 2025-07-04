@@ -1,0 +1,18 @@
+.notFoundContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14rem;
+  font-size: 1.5rem;
+  margin-left: 280px;
+}
+
+@media (max-width: 768px) {
+  .notFoundContainer {
+    padding: 7rem;
+    font-size: 1.2rem;
+    margin-left: 80px;
+  }
+}

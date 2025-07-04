@@ -1,0 +1,143 @@
+.copyright {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 1000;
+}
+.container {
+  padding: 2rem;
+  margin-left: 280px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 10px;
+  animation: fadeInZoom 0.4s ease forwards;
+  opacity: 0;
+  transform: scale(0.95);
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+  cursor: pointer;
+}
+
+.card:nth-child(3n) {
+  animation-name: slideInLeft;
+}
+.card:nth-child(3n + 1) {
+  animation-name: slideInBottom;
+}
+.card:nth-child(3n + 2) {
+  animation-name: slideInRight;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+@keyframes slideInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeInZoom {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.card img,
+.videoWrapper,
+.videoPreviewWrapper {
+  height: auto;
+  border-radius: 4px;
+  max-height: none;
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+  display: block;
+  animation: fadeInZoom 0.4s ease forwards;
+}
+
+.videoPreviewWrapper {
+  position: relative;
+}
+
+.playIconOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: rgb(239, 239, 239);
+  text-shadow: 0 0 10px black;
+  pointer-events: none;
+}
+
+.masonryGrid {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.masonryGridColumn {
+  background-clip: padding-box;
+  flex: 1;
+  min-width: 250px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 1030px) {
+  .container {
+    margin-left: 202px;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .playIconOverlay {
+    font-size: 36px;
+  }
+}
