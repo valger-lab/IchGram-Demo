@@ -34,10 +34,13 @@ const ChangePasswordPage = () => {
     }
 
     try {
-      await axios.post("http://localhost:3000/api/auth/change-password", {
-        email,
-        password: newPassword,
-      });
+      await axios.post(
+        "https://ichgram-demo.onrender.com/api/auth/change-password",
+        {
+          email,
+          password: newPassword,
+        }
+      );
       setMessage("Password changed successfully.");
       setTimeout(() => navigate("/"), 3000); //  на логин через 3 секунды
     } catch (error) {

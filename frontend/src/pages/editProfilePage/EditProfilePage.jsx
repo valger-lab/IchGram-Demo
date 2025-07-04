@@ -20,7 +20,7 @@ export default function EditProfilePage() {
   const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
-  const API_BASE = "http://localhost:3000";
+  const API_BASE = "https://ichgram-demo.onrender.com";
 
   // Валидация URL
   const isValidUrl = (url) => {

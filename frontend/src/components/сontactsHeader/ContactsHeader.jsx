@@ -1,6 +1,6 @@
 import styles from "./ContactsHeader.module.css";
 
-const API_BASE = "http://localhost:3000";
+const API_BASE = "https://ichgram-demo.onrender.com";
 const ContactsHeader = ({
   contacts,
   currentUserId,

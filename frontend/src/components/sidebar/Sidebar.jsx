@@ -30,7 +30,7 @@ const links = [
   { to: "/create", label: "Create", icon: <PlusCircle size={20} /> },
   { to: "/profile", label: "Profile", icon: <User size={20} /> },
 ];
-const API_BASE = "http://localhost:3000";
+const API_BASE = "https://ichgram-demo.onrender.com";
 
 export default function Sidebar({
   onNotificationClick,

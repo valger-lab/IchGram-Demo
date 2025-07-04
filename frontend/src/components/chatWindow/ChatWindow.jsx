@@ -4,7 +4,7 @@ import axios from "../../api/axiosInstance.js";
 import ConfirmModal from "../сonfirmModal/ConfirmModal.jsx";
 import { useNavigate } from "react-router-dom";
 
-const API_BASE = "http://localhost:3000";
+const API_BASE = "https://ichgram-demo.onrender.com";
 
 export default function ChatWindow({
   currentUserId,

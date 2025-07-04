@@ -7,7 +7,9 @@ import { io } from "socket.io-client";
 import { useSearchParams } from "react-router-dom";
 import ContactsHeader from "../сontactsHeader/ContactsHeader.jsx";
 
-const socket = io("http://localhost:3000", { withCredentials: true });
+const socket = io("https://ichgram-demo.onrender.com", {
+  withCredentials: true,
+});
 
 export default function MessagesPanel() {
   const [contacts, setContacts] = useState([]);

@@ -2,7 +2,7 @@ import styles from "./MessageSidebar.module.css";
 import { useMemo } from "react";
 import React from "react";
 
-const API_BASE = "http://localhost:3000";
+const API_BASE = "https://ichgram-demo.onrender.com";
 
 function MessageSidebar({ contacts, onSelect, unreadCounts }) {
   const getUnreadCount = (userId) => {

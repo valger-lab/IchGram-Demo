@@ -8,7 +8,7 @@ import FollowPopover from "../../components/followListModal/FollowPopover.jsx";
 
 import { FaCheck } from "react-icons/fa";
 
-const API_BASE = "http://localhost:3000";
+const API_BASE = "https://ichgram-demo.onrender.com";
 
 export default function UserProfilePage() {
   const { id } = useParams();

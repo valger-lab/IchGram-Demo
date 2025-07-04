@@ -4,7 +4,7 @@ import { usePostModal } from "../../context/PostModalContext.jsx";
 import styles from "./ExplorePage.module.css";
 import Masonry from "react-masonry-css";
 
-const API_BASE = "http://localhost:3000";
+const API_BASE = "https://ichgram-demo.onrender.com";
 
 export default function ExplorePage() {
   const [posts, setPosts] = useState([]);

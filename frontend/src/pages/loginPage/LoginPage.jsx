@@ -20,10 +20,13 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:3000/api/auth/login", {
-        email,
-        password,
-      });
+      const res = await axios.post(
+        "https://ichgram-demo.onrender.com/api/auth/login",
+        {
+          email,
+          password,
+        }
+      );
 
       const token = res.data.token;
       localStorage.setItem("token", token);
@@ -37,10 +40,13 @@ const LoginPage = () => {
 
   const handleDemoLogin = async () => {
     try {
-      const res = await axios.post("http://localhost:3000/api/auth/login", {
-        email: import.meta.env.VITE_DEMO_EMAIL,
-        password: import.meta.env.VITE_DEMO_PASSWORD,
-      });
+      const res = await axios.post(
+        "https://ichgram-demo.onrender.com/api/auth/login",
+        {
+          email: import.meta.env.VITE_DEMO_EMAIL,
+          password: import.meta.env.VITE_DEMO_PASSWORD,
+        }
+      );
 
       const token = res.data.token;
       localStorage.setItem("token", token);

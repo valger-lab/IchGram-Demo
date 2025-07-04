@@ -17,12 +17,15 @@ const RegisterPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:3000/api/auth/register", {
-        fullName,
-        username,
-        email,
-        password,
-      });
+      const res = await axios.post(
+        "https://ichgram-demo.onrender.com/api/auth/register",
+        {
+          fullName,
+          username,
+          email,
+          password,
+        }
+      );
 
       localStorage.setItem("token", res.data.token);
       navigate("/home");

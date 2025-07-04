@@ -7,7 +7,7 @@ import { formatDistanceToNow } from "date-fns";
 import { useNavigate } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
 
-const API_BASE = "http://localhost:3000";
+const API_BASE = "https://ichgram-demo.onrender.com";
 
 export default function PostCard({ post, onViewComments }) {
   const { openPostModal } = usePostModal();

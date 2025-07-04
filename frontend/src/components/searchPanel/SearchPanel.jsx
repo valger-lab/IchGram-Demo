@@ -5,7 +5,7 @@ import axios from "../../api/axiosInstance";
 import { X } from "lucide-react";
 import { jwtDecode } from "jwt-decode";
 
-const API_BASE = "http://localhost:3000";
+const API_BASE = "https://ichgram-demo.onrender.com";
 
 export default function SearchPanel({ onClose }) {
   const [query, setQuery] = useState("");

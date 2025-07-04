@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 import { usePostModal } from "../../context/PostModalContext.jsx";
 
-const API_BASE = "http://localhost:3000";
+const API_BASE = "https://ichgram-demo.onrender.com";
 
 export default function NotificationItem({
   notification,

@@ -240,7 +240,7 @@ export default function ProfilePage() {
 
   if (!user) return null;
 
-  const API_BASE = "http://localhost:3000";
+  const API_BASE = "https://ichgram-demo.onrender.com";
 
   return (
     <div>

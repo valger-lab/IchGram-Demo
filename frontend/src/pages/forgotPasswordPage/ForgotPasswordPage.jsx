@@ -16,9 +16,12 @@ const ForgotPasswordPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3000/api/auth/forgot-password", {
-        email,
-      });
+      await axios.post(
+        "https://ichgram-demo.onrender.com/api/auth/forgot-password",
+        {
+          email,
+        }
+      );
       navigate("/change-password", { state: { email } });
     } catch (err) {
       setError("Failed to send reset link. Please try again.", err);

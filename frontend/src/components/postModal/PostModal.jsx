@@ -12,7 +12,7 @@ import useCurrentUserId from "../../hooks/useCurrentUserId.js";
 
 import { usePostEvents } from "../../context/PostEventsContext";
 
-const API_BASE = "http://localhost:3000";
+const API_BASE = "https://ichgram-demo.onrender.com";
 
 export default function PostModal({ post, onClose }) {
   const [comments, setComments] = useState([]);

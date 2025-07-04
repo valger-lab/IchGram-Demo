@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "../../api/axiosInstance";
 
-const API_BASE = "http://localhost:3000";
+const API_BASE = "https://ichgram-demo.onrender.com";
 
 export default function FollowPopover({
   anchorEl,
